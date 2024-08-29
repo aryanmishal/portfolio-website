@@ -28,40 +28,63 @@ header {
 
 .branding h1 {
     font-size: 1.8rem;
+    text-align: center;
+    flex: 1;
 }
 
 nav {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
+    flex: 1;
+    justify-content: flex-start;
 }
 
-.nav-links li, .social-links li {
-    margin-left: 20px;
+.nav-links li {
+    margin-right: 20px;
 }
 
-.nav-links li a, .social-links li a {
+.nav-links li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.nav-links li a:hover, .social-links li a:hover {
+.nav-links li a:hover {
     color: #ff6347;
 }
 
 .social-links {
-    margin-left: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links li {
+    margin-left: 20px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #ff6347;
 }
 
 main {
     padding: 20px 0;
     background-color: #fff;
+    text-align: center;
 }
 
 main section {
