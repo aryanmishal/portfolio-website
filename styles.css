@@ -26,10 +26,21 @@ header {
     align-items: center;
 }
 
+.branding {
+    display: flex;
+    align-items: center;
+}
+
 .branding h1 {
     font-size: 1.8rem;
-    text-align: center;
-    flex: 1;
+    margin-left: 20px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 nav {
