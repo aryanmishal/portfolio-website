@@ -3,55 +3,517 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <meta name="description" content="Aryan Mishal - Software Developer, Web Developer, and Ethical Hacker. Professional portfolio showcasing projects, skills, and experience." />
+    <meta name="keywords" content="Aryan Mishal, Software Developer, Web Developer, Ethical Hacker, Portfolio" />
+    <meta name="author" content="Aryan Mishal" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aryanmishal.me/" />
+    <meta property="og:title" content="Aryan Mishal - Portfolio" />
+    <meta property="og:description" content="Software Developer, Web Developer, and Ethical Hacker" />
+    <meta property="og:image" content="https://aryanmishal.me/main.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://aryanmishal.me/" />
+    <meta property="twitter:title" content="Aryan Mishal - Portfolio" />
+    <meta property="twitter:description" content="Software Developer, Web Developer, and Ethical Hacker" />
+    <meta property="twitter:image" content="https://aryanmishal.me/main.jpg" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio Website</title>
+    <title>Aryan Mishal - Portfolio</title>
   </head>
   <body>
-    <header>
+    <!-- Header -->
+    <header class="header">
       <a href="#" class="logo">Aryan Mishal</a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
 
-      <nav>
-        <a href="#" class="active"> Home</a>
-        <a href="#">Services</a>
-        <a href="#">Skills</a>
-        <a href="#">Education</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
+      <nav class="navbar">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </header>
-    <section class="home">
+
+    <!-- Home Section -->
+    <section id="home" class="home">
       <div class="home-img">
-        <img src="main.jpg" alt="" />
+        <img src="main.jpg" alt="Aryan Mishal" />
       </div>
       <div class="home-content">
-        <h1>Hi, It's <span>Aryan</span></h1>
-        <h3 class="typing-text">I'm a <span></span></h3>
+        <h1>Hi, I'm <span>Aryan Mishal</span></h1>
+        <h3 class="typing-text">I'm a <span class="typing-cursor"></span></h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore
-          dolores esse. Odit similique doloribus tenetur doloremque, sunt
-          commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam
-          quaerat neque asperiores ea.
+          Passionate software developer with expertise in web development and cybersecurity. 
+          I create innovative solutions that make a difference in the digital world.
         </p>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/aryanmishal"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/aryanmishal"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://twitter.com/aryan_mishal"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/aryan_mishal"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+          <a href="https://www.linkedin.com/in/aryanmishal" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/aryanmishal" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://twitter.com/aryan_mishal" target="_blank" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/aryan_mishal" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
-        <a href="mailto:aryan.mishal.jh@gmail.com" class="btn">Hire me</a>
+        <div class="home-buttons">
+          <a href="mailto:aryan.mishal.jh@gmail.com" class="btn btn-primary">Hire Me</a>
+          <a href="resume.pdf" class="btn btn-secondary" download>Download CV</a>
+        </div>
       </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Who I Am</h3>
+            <p>
+              I'm a dedicated software developer with a passion for creating innovative solutions 
+              that solve real-world problems. With expertise in web development and cybersecurity, 
+              I bring a unique perspective to every project I work on.
+            </p>
+            <p>
+              My journey in technology started with curiosity and has evolved into a career 
+              focused on building secure, scalable, and user-friendly applications. I believe 
+              in continuous learning and staying updated with the latest technologies and best practices.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h4>3+</h4>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat">
+                <h4>50+</h4>
+                <p>Projects Completed</p>
+              </div>
+              <div class="stat">
+                <h4>20+</h4>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="about.jpg" alt="Aryan Mishal working" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Creating responsive, modern websites and web applications using the latest technologies and best practices.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Development</h3>
+            <p>Building cross-platform mobile applications that provide seamless user experiences across all devices.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Cybersecurity</h3>
+            <p>Implementing security measures and conducting ethical hacking to protect digital assets and systems.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Database Design</h3>
+            <p>Designing and optimizing database structures for efficient data management and retrieval.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>Cloud Solutions</h3>
+            <p>Deploying and managing applications on cloud platforms for scalability and reliability.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>API Development</h3>
+            <p>Building robust APIs that enable seamless integration between different systems and services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-content">
+          <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>JavaScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-percent="90"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-percent="85"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Java</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-percent="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>C++</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-percent="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Technologies & Tools</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <span>Express.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>ES6+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-project="1">
+            <div class="project-image">
+              <img src="project1.jpg" alt="E-Commerce Platform" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <p>A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-project="2">
+            <div class="project-image">
+              <img src="project2.jpg" alt="Task Management App" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Task Management App</h3>
+              <p>A collaborative task management application with real-time updates, team collaboration, and progress tracking.</p>
+              <div class="project-tech">
+                <span>Vue.js</span>
+                <span>Firebase</span>
+                <span>Vuex</span>
+                <span>Vuetify</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-project="3">
+            <div class="project-image">
+              <img src="project3.jpg" alt="Weather Dashboard" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Weather Dashboard</h3>
+              <p>A weather application with location-based forecasts, interactive maps, and historical data visualization.</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>OpenWeather API</span>
+                <span>Chart.js</span>
+                <span>CSS3</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card" data-project="4">
+            <div class="project-image">
+              <img src="project4.jpg" alt="Portfolio Website" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>A modern, responsive portfolio website with smooth animations, contact form, and project showcase.</p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>GSAP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 - Present</div>
+              <h3>Senior Software Developer</h3>
+              <h4>Tech Solutions Inc.</h4>
+              <p>Leading development teams in creating scalable web applications. Mentoring junior developers and implementing best practices.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2021 - 2023</div>
+              <h3>Full Stack Developer</h3>
+              <h4>Digital Innovations Ltd.</h4>
+              <p>Developed and maintained multiple web applications using modern technologies. Collaborated with cross-functional teams.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2019 - 2021</div>
+              <h3>Frontend Developer</h3>
+              <h4>WebCraft Studios</h4>
+              <p>Created responsive user interfaces and implemented interactive features for various client projects.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2015 - 2019</div>
+              <h3>Bachelor of Computer Science</h3>
+              <h4>University of Technology</h4>
+              <p>Graduated with honors. Specialized in software engineering and cybersecurity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>aryan.mishal.jh@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>San Francisco, CA</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2024 Aryan Mishal. All rights reserved.</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/aryanmishal" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/aryanmishal" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com/aryan_mishal" target="_blank" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/aryan_mishal" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
